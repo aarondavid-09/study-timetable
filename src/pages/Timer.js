@@ -19,7 +19,12 @@ function Timer() {
   const seconds = String(timeLeft % 60).padStart(2,"0");
 
   // progress ring math
-  const _maxSeconds = hours * 3600 + minutes * 60 + seconds;
+  const maxSeconds = hours * 3600 + minutes * 60 + seconds;
+
+const progress =
+  maxSeconds > 0
+    ? ((maxSeconds - timeLeft) / maxSeconds) * 100
+    : 0;
   const total = totalRef.current || 0;
   const progressPercent = total > 0 ? ((total - timeLeft) / total) : 0;
   const radius = 54;
