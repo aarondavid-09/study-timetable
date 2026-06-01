@@ -1,0 +1,12 @@
+.calendar-container { padding:28px; min-height:calc(100vh - 72px); background:linear-gradient(120deg,#fff8e7,#e8f9ff); font-family:Poppins, sans-serif; }
+.calendar-container h2 { text-align:center; margin-bottom:12px; }
+.calendar-controls { display:flex; justify-content:center; margin-bottom:10px; }
+.calendar-add { display:flex; gap:10px; justify-content:center; margin-bottom:14px; }
+.calendar-add input { width:380px; padding:8px; border-radius:8px; border:1px solid #ddd; }
+.calendar-add button { padding:8px 12px; border-radius:8px; border:none; background:linear-gradient(90deg,#ff8a00,#e52e71); color:#fff; cursor:pointer; }
+.events-list { max-width:900px; margin:0 auto; background:#fff; border-radius:10px; padding:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.events-list ul { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; }
+.events-list li { display:flex; justify-content:space-between; align-items:center; padding:8px; border-radius:8px; background:#fafafa; }
+.evt-meta small { color:#666; margin-right:10px; }
+.evt-meta button { background:#ff6b6b; border:none; color:#fff; padding:6px 10px; border-radius:8px; cursor:pointer; }
+.muted { color:#777; text-align:center; padding:10px 0; }

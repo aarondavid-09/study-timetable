@@ -1,0 +1,56 @@
+.timetable {
+  padding: 26px;
+  min-height: calc(100vh - 72px);
+  background: linear-gradient(120deg,#f6d365,#fda085);
+  font-family: "Poppins", sans-serif;
+  color:#111;
+}
+
+.timetable h2 { text-align:center; margin-bottom:12px; }
+
+.add-subject {
+  display:flex; justify-content:center; gap:10px; margin-bottom:14px;
+}
+
+.add-subject input {
+  width:360px; padding:10px; border-radius:10px; border:2px solid #e6e6e6;
+  font-size:15px;
+}
+
+.add-subject button {
+  padding:10px 14px; border-radius:10px; border:none; background:linear-gradient(90deg,#34d399,#06b6d4); color:#fff; font-weight:700;
+  cursor:pointer;
+}
+
+.overall-progress { text-align:center; margin-bottom:12px; font-weight:700; }
+
+.subjects-grid {
+  display:grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap:18px;
+}
+
+.subject-card {
+  background:#fff; border-radius:12px; padding:16px; box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.subject-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+
+.subject-header h3 { margin:0; }
+
+.subject-actions .del-sub { background:#f87272; border:none; padding:6px 8px; color:#fff; border-radius:8px; cursor:pointer; }
+
+.progress-bar { height:10px; background:#f0f0f0; border-radius:10px; overflow:hidden; margin:8px 0; }
+.progress { height:100%; background: linear-gradient(90deg,#43e97b,#38f9d7); transition:width .5s ease; }
+
+.progress-percent { font-size:14px; margin-bottom:8px; }
+
+.topics-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; }
+
+.topic { display:flex; justify-content:space-between; align-items:center; padding:8px; border-radius:8px; background:#fafafa; }
+.topic.done { text-decoration:line-through; color:#777; background:#f2f3f4; }
+.topic-text { margin-left:8px; }
+
+.del-topic { background:transparent; border:none; color:#ff6b6b; font-weight:700; cursor:pointer; }
+
+.add-topic { display:flex; gap:8px; margin-top:10px; }
+.add-topic input { flex:1; padding:8px; border-radius:8px; border:1px solid #ddd; }
+.add-topic button { padding:8px 12px; border-radius:8px; border:none; background:linear-gradient(90deg,#ff8a00,#e52e71); color:#fff; cursor:pointer; }
